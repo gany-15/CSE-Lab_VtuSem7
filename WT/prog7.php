@@ -7,13 +7,14 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
+                font-size: 80px;
             }
             body{
                 background-color: black;
                 color: white;
             }
         </style>
-        <p style="font-size: 80px;">
+        <p>
             <?php echo date("h:i:s A");?>
         </p>
     </head>
