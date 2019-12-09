@@ -65,7 +65,7 @@
         }
         for ($row = 0; $row < $m; $row++) {
             for ($col = 0; $col < $q; $col++){
-                echo $result[$col][$row]." ";
+                echo $result[$row][$col]." ";
             }
             echo "<br/>";
         }

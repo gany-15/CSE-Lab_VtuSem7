@@ -9,3 +9,4 @@
     fprintf($file, "%d", $hits[0]);
     fclose($file);
     print "Total Views: ". $hits[0];
+?>

@@ -6,7 +6,7 @@
 	<title>1JS16CS063</title>
 
 	<style type="text/css">
-		center{
+		.center{
 			height: 620px;
 			position: relative;
 		}
@@ -35,7 +35,7 @@
 			ids.innerHTML = 'TEXT-GROWING'
 			ids.setAttribute('style', 'font-size:'+fs+'px; color:red')
 			fs+=5
-			if(fs>+50){
+			if(fs>=50){
 				clearInterval(myVar1);
 				myVar2 = setInterval(deTimer, 1000);
 			}
