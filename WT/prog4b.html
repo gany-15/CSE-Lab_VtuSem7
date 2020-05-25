@@ -4,25 +4,28 @@ b.Parameter: A number
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>1JS16CS063</title>
 </head>
+
 <body>
 	<script type="text/javascript">
-		var num, reverse=0, remainder;
-		var n = prompt("Enter A Number","");
-		if(isNaN(n)){
+		var num, reverse = 0,
+			remainder;
+		var n = prompt("Enter A Number", "");
+		if (isNaN(n)) {
 			alert("Enter Valid Number");
-		}
-		else{
+		} else {
 			num = n;
-			while(num!=0){
-				remainder = num%10;
-				reverse = reverse*10 + remainder;
-				num = parseInt(num/10);
+			while (num != 0) {
+				remainder = num % 10;
+				reverse = reverse * 10 + remainder;
+				num = parseInt(num / 10);
 			}
-			alert("Number: "+n+" Reverse: "+reverse);
+			alert("Number: " + n + " Reverse: " + reverse);
 		}
 	</script>
 </body>
+
 </html>

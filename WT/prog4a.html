@@ -3,25 +3,27 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>1JS16CS063</title>
 </head>
+
 <body>
 	<script type="text/javascript">
-		var str = prompt("Enter The String","");
+		var str = prompt("Enter The String", "");
 		str = str.toUpperCase();
-		for(var i=0;  i<str.length; i++){
+		for (var i = 0; i < str.length; i++) {
 			var chr = str.charAt(i);
-			if(chr=='A' || chr=='E' || chr=='I' || chr=='O' || chr=='U'){
+			if (chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U') {
 				break;
 			}
 		}
-		if(i<str.length){
-			alert("String Is "+str+"\nLeftmost Vowel Is "+str.charAt(i)+" At "+(i+1));
-		}
-		else{
+		if (i < str.length) {
+			alert("String Is " + str + "\nLeftmost Vowel Is " + str.charAt(i) + " At " + (i + 1));
+		} else {
 			alert("No Vowels");
 		}
-	</script>	
+	</script>
 </body>
+
 </html>

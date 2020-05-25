@@ -2,19 +2,21 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>1JS16CS063</title>
 
 	<style type="text/css">
-		.center{
+		.center {
 			height: 620px;
 			position: relative;
 		}
-		p{
+
+		p {
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%,-50%);
+			transform: translate(-50%, -50%);
 		}
 	</style>
 </head>
@@ -31,23 +33,25 @@
 		var fs = 5;
 		var ids = document.getElementById("demo");
 
-		function inTimer(){
+		function inTimer() {
 			ids.innerHTML = 'TEXT-GROWING'
-			ids.setAttribute('style', 'font-size:'+fs+'px; color:red')
-			fs+=5
-			if(fs>=50){
+			ids.setAttribute('style', 'font-size:' + fs + 'px; color:red')
+			fs += 5
+			if (fs >= 50) {
 				clearInterval(myVar1);
 				myVar2 = setInterval(deTimer, 1000);
 			}
 		}
-		function deTimer(){
-			fs-=5
+
+		function deTimer() {
+			fs -= 5
 			ids.innerHTML = 'TEXT-SHRINKING'
-			ids.setAttribute('style', 'font-size:'+fs+'px; color:blue')
-			if(fs==5){
+			ids.setAttribute('style', 'font-size:' + fs + 'px; color:blue')
+			if (fs == 5) {
 				clearInterval(myVar2);
 			}
 		}
 	</script>
 </body>
+
 </html>
